@@ -1,0 +1,39 @@
+#include<stdio.h>
+void main()
+{
+int a,b,ch;
+printf("Enter 1 for addition");
+printf("\nEnter 2 for substraction");
+printf("\nEnter 3 for multiplication");
+printf("\nEnter 4 for division");
+scanf("%d",&ch);
+switch (ch){
+case 1:
+   printf("\nEnter two values=");
+   scanf("%d%d",&a,&b);
+   printf("%d+%d=%d",a,b,a+b);
+   break;
+case 2:
+    printf("\nEnter two values");
+   scanf("%d%d",&a,&b);
+   printf("%d-%d=%d",a,b,a-b);
+    break;
+    
+ case 3:
+     printf("\nEnter two values");
+   scanf("%d%d",&a,&b);
+   printf("%d*%d=%d",a,b,a*b);
+   break;
+   
+ case 4:
+     printf("\nEnter two values");
+   scanf("%d%d",&a,&b);
+   printf("%d/%d=%d",a,b,a/b);
+   break;
+   
+   default:
+   printf("Not valid Re enter the number");
+  break;
+  }  
+  
+  }
